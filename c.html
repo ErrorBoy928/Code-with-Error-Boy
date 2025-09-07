@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn C Language - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#8e44ad; color:#fff; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn C Programming</h1>
+    <p style="margin-top:8px;">From Basics to Advanced Concepts</p>
+  </header>
+
+  <!-- Main -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">1. Introduction to C</h2>
+      <p>
+        C is a powerful general-purpose programming language developed by <b>Dennis Ritchie</b> in the 1970s.  
+        It is widely used for system software, operating systems, and embedded systems.
+      </p>
+    </section>
+
+    <!-- Structure -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">2. Structure of a C Program</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+      </pre>
+      <ul>
+        <li><b>#include</b> → Preprocessor directive</li>
+        <li><b>main()</b> → Entry point of every C program</li>
+        <li><b>printf()</b> → Function to print output</li>
+        <li><b>return 0;</b> → Program executed successfully</li>
+      </ul>
+    </section>
+
+    <!-- Variables -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">3. Variables & Data Types</h2>
+      <p>Variables are containers for storing data. Common data types:</p>
+      <ul>
+        <li><b>int</b> → integers</li>
+        <li><b>float</b> → decimal numbers</li>
+        <li><b>char</b> → characters</li>
+        <li><b>double</b> → large decimal numbers</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int age = 20;
+float pi = 3.14;
+char grade = 'A';
+      </pre>
+    </section>
+
+    <!-- Operators -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">4. Operators</h2>
+      <p>C supports arithmetic, relational, logical, and assignment operators.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int a = 10, b = 5;
+printf("%d\n", a+b);  // Addition
+printf("%d\n", a-b);  // Subtraction
+printf("%d\n", a*b);  // Multiplication
+printf("%d\n", a/b);  // Division
+printf("%d\n", a==b); // Relational
+      </pre>
+    </section>
+
+    <!-- Control -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">5. Control Statements</h2>
+      <ul>
+        <li><b>if-else</b></li>
+        <li><b>switch</b></li>
+        <li><b>for loop</b></li>
+        <li><b>while loop</b></li>
+        <li><b>do-while loop</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int num = 5;
+if(num % 2 == 0) {
+    printf("Even");
+} else {
+    printf("Odd");
+}
+      </pre>
+    </section>
+
+    <!-- Functions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">6. Functions</h2>
+      <p>Functions allow modular code.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    printf("%d", add(3, 4)); // 7
+    return 0;
+}
+      </pre>
+    </section>
+
+    <!-- Arrays -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">7. Arrays</h2>
+      <p>Collection of elements of same type.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int arr[5] = {1,2,3,4,5};
+for(int i=0; i<5; i++) {
+    printf("%d ", arr[i]);
+}
+      </pre>
+    </section>
+
+    <!-- Pointers -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">8. Pointers</h2>
+      <p>Pointers store memory addresses.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int a = 10;
+int *p = &a;
+printf("%d", *p); // Access value using pointer
+      </pre>
+    </section>
+
+    <!-- Strings -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">9. Strings</h2>
+      <p>Strings are arrays of characters ending with <code>'\0'</code>.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+char name[] = "ErrorBoy";
+printf("%s", name);
+      </pre>
+    </section>
+
+    <!-- Structures -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">10. Structures</h2>
+      <p>Used to group variables of different types.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+struct Student {
+    int id;
+    char name[20];
+};
+
+struct Student s1 = {1, "Ali"};
+printf("%d %s", s1.id, s1.name);
+      </pre>
+    </section>
+
+    <!-- File Handling -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">11. File Handling</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+FILE *fptr;
+fptr = fopen("test.txt", "w");
+fprintf(fptr, "Hello File");
+fclose(fptr);
+      </pre>
+    </section>
+
+    <!-- Memory -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#8e44ad;">12. Dynamic Memory Allocation</h2>
+      <ul>
+        <li><b>malloc()</b></li>
+        <li><b>calloc()</b></li>
+        <li><b>realloc()</b></li>
+        <li><b>free()</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int *ptr;
+ptr = (int*)malloc(5 * sizeof(int));
+for(int i=0; i<5; i++) {
+    ptr[i] = i+1;
+    printf("%d ", ptr[i]);
+}
+free(ptr);
+      </pre>
+    </section>
+
+    <!-- Back -->
+    <p><a href="../index.html" style="color:#8e44ad; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#8e44ad; text-decoration:none;">Home</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Python - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#2c3e50; color:#fff; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn Python from Zero to Advanced</h1>
+    <p style="margin-top:8px;">Simple, Powerful and Beginner-Friendly Language</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">1. What is Python?</h2>
+      <p>
+        Python is a <b>high-level</b>, <b>interpreted</b>, and <b>object-oriented</b> programming language.  
+        It is famous for being <b>easy to read</b> and is widely used in <b>web development, data science, AI, and automation</b>.
+      </p>
+    </section>
+
+    <!-- Syntax -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">2. Python Syntax</h2>
+      <p>Python uses <b>indentation</b> instead of curly braces.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+# Print a message
+print("Hello, World!")
+      </pre>
+    </section>
+
+    <!-- Variables -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">3. Variables</h2>
+      <p>No need to declare types explicitly; Python detects them automatically.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+age = 25
+price = 19.99
+name = "Ali"
+is_student = True
+      </pre>
+    </section>
+
+    <!-- Data Types -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">4. Data Types</h2>
+      <ul>
+        <li><b>int</b> → numbers</li>
+        <li><b>float</b> → decimals</li>
+        <li><b>str</b> → text</li>
+        <li><b>bool</b> → True/False</li>
+        <li><b>list</b> → [1,2,3]</li>
+        <li><b>tuple</b> → (1,2,3)</li>
+        <li><b>dict</b> → {"name":"Ali","age":21}</li>
+        <li><b>set</b> → {1,2,3}</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+student = {"name": "Ali", "age": 21}
+print(student["name"]) # Ali
+      </pre>
+    </section>
+
+    <!-- Operators -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">5. Operators</h2>
+      <ul>
+        <li>Arithmetic: +, -, *, /, %</li>
+        <li>Comparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+        <li>Logical: and, or, not</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+x, y = 10, 5
+print(x + y)  # 15
+print(x > y)  # True
+      </pre>
+    </section>
+
+    <!-- Conditions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">6. Conditional Statements</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+age = 18
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+      </pre>
+    </section>
+
+    <!-- Loops -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">7. Loops</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+j = 0
+while j < 5:
+    print(j)
+    j += 1
+      </pre>
+    </section>
+
+    <!-- Functions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">8. Functions</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+def greet(name):
+    return "Hello " + name
+
+print(greet("Ali"))
+
+# Lambda function
+add = lambda a, b: a + b
+print(add(5, 3))
+      </pre>
+    </section>
+
+    <!-- Lists, Tuples, Dictionaries -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">9. Collections</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+# List
+fruits = ["apple", "banana", "mango"]
+print(fruits[0])
+
+# Tuple
+numbers = (1, 2, 3)
+
+# Dictionary
+student = {"name": "Ali", "age": 21}
+print(student["age"])
+      </pre>
+    </section>
+
+    <!-- OOP -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">10. Object-Oriented Programming (OOP)</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+class Car:
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    def display(self):
+        print(self.brand, self.year)
+
+c1 = Car("Toyota", 2022)
+c1.display()
+      </pre>
+    </section>
+
+    <!-- Exceptions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">11. Exception Handling</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+try:
+    result = 10 / 0
+except Exception as e:
+    print("Error:", e)
+finally:
+    print("Always executes")
+      </pre>
+    </section>
+
+    <!-- Modules -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">12. Modules</h2>
+      <p>Python allows code reuse with modules.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+# math module
+import math
+print(math.sqrt(16))
+      </pre>
+    </section>
+
+    <!-- Advanced -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2c3e50;">13. Advanced Features</h2>
+      <ul>
+        <li><b>List comprehensions</b></li>
+        <li><b>Decorators</b></li>
+        <li><b>Generators</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+# List comprehension
+squares = [x**2 for x in range(5)]
+
+# Generator
+def numbers():
+    for i in range(3):
+        yield i
+
+for n in numbers():
+    print(n)
+
+# Decorator
+def decorator(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
+
+@decorator
+def hello():
+    print("Hello!")
+
+hello()
+      </pre>
+    </section>
+
+    <!-- Back Link -->
+    <p><a href="../index.html" style="color:#2c3e50; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#2c3e50; text-decoration:none;">Home</a> | 
+      <a href="dsa.html" style="color:#2c3e50; text-decoration:none;">Next: Learn DSA</a>
+    </p>
+  </footer>
+
+</body>
+</html>

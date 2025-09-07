@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn HTML - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#4494e4; color:white; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn HTML from Zero to Advanced</h1>
+    <p style="margin-top:8px;">Understand every tag, attribute, and example</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">1. What is HTML?</h2>
+      <p>
+        HTML (HyperText Markup Language) is the standard language for creating web pages.
+        It uses <b>tags</b> to structure content (like headings, paragraphs, images, links).
+        Most tags also have <b>attributes</b> that give extra information.
+      </p>
+    </section>
+
+    <!-- Document Structure -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">2. Basic Structure of an HTML Document</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px; overflow-x:auto;">
+&lt;!DOCTYPE html&gt;   &lt;!-- Defines this as an HTML5 document --&gt;
+&lt;html lang="en"&gt;  &lt;!-- Root element, 'lang' attribute = language --&gt;
+  &lt;head&gt;         &lt;!-- Meta information (not displayed) --&gt;
+    &lt;meta charset="UTF-8"&gt;   &lt;!-- Character encoding --&gt;
+    &lt;title&gt;My Page&lt;/title&gt; &lt;!-- Title shown in browser tab --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;         &lt;!-- Visible content goes here --&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </section>
+
+    <!-- Headings -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">3. Headings (&lt;h1&gt; to &lt;h6&gt;)</h2>
+      <p>
+        Headings are used to define titles and subtitles.  
+        <b>&lt;h1&gt;</b> is the biggest, <b>&lt;h6&gt;</b> is the smallest.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Smaller Subheading&lt;/h3&gt;
+      </pre>
+    </section>
+
+    <!-- Paragraphs and Text -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">4. Paragraphs and Text Formatting</h2>
+      <p>Paragraphs (&lt;p&gt;) hold blocks of text. You can also format text with tags:</p>
+      <ul>
+        <li>&lt;b&gt; or &lt;strong&gt; → <b>Bold</b></li>
+        <li>&lt;i&gt; or &lt;em&gt; → <i>Italic</i></li>
+        <li>&lt;u&gt; → <u>Underline</u></li>
+        <li>&lt;mark&gt; → <mark>Highlighted</mark></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; word and an &lt;i&gt;italic&lt;/i&gt; word.&lt;/p&gt;
+      </pre>
+    </section>
+
+    <!-- Links -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">5. Links (&lt;a&gt;)</h2>
+      <p>
+        The &lt;a&gt; tag defines hyperlinks.  
+        Attribute <b>href</b> = destination URL, <b>target</b> = where to open.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;a href="https://google.com" target="_blank"&gt;Visit Google&lt;/a&gt;
+      </pre>
+    </section>
+
+    <!-- Images -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">6. Images (&lt;img&gt;)</h2>
+      <p>
+        Images are inserted with &lt;img&gt;. It is a <b>self-closing tag</b>.  
+        Attributes: <b>src</b> (source), <b>alt</b> (description).
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;img src="logo.png" alt="Website Logo" width="200" height="100"&gt;
+      </pre>
+    </section>
+
+    <!-- Lists -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">7. Lists</h2>
+      <p>
+        HTML supports ordered (&lt;ol&gt;) and unordered (&lt;ul&gt;) lists.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+    </section>
+
+    <!-- Tables -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">8. Tables</h2>
+      <p>
+        Tables use rows (&lt;tr&gt;), columns (&lt;td&gt;), and headers (&lt;th&gt;).
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </pre>
+    </section>
+
+    <!-- Forms -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">9. Forms</h2>
+      <p>
+        Forms collect user input. Common elements:  
+        &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;, &lt;select&gt;.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+&lt;form&gt;
+  Name: &lt;input type="text" name="username"&gt;&lt;br&gt;
+  Password: &lt;input type="password" name="pwd"&gt;&lt;br&gt;
+  &lt;textarea name="message"&gt;Write here...&lt;/textarea&gt;&lt;br&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </pre>
+    </section>
+
+    <!-- Semantic Tags -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">10. Semantic Tags</h2>
+      <p>
+        HTML5 introduced semantic tags for better structure & accessibility.
+      </p>
+      <ul>
+        <li>&lt;header&gt; – Page header</li>
+        <li>&lt;footer&gt; – Page footer</li>
+        <li>&lt;nav&gt; – Navigation</li>
+        <li>&lt;article&gt; – Self-contained content</li>
+        <li>&lt;section&gt; – Section of a page</li>
+      </ul>1
+    </section>
+
+    <!-- Advanced -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#4494e4;">11. Advanced HTML</h2>
+      <ul>
+        <li>&lt;audio&gt; and &lt;video&gt; → Play media</li>
+        <li>&lt;canvas&gt; → Draw graphics with JavaScript</li>
+        <li>&lt;svg&gt; → Vector graphics</li>
+        <li>Meta tags (SEO + social media previews)</li>
+      </ul>
+    </section>
+
+    <!-- Back Link -->
+    <p><a href="../index.html" style="color:#4494e4; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#4494e4; text-decoration:none;">Home</a> | 
+      <a href="css.html" style="color:#4494e4; text-decoration:none;">Next: Learn CSS</a>
+    </p>
+  </footer>
+
+</body>
+</html>

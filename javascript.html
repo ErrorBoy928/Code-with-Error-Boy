@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#f1c40f; color:#000; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn JavaScript from Zero to Advanced</h1>
+    <p style="margin-top:8px;">Make your websites interactive and dynamic</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">1. What is JavaScript?</h2>
+      <p>
+        JavaScript is a <b>programming language</b> that runs in the browser.
+        It adds interactivity (buttons, animations, forms) and can also be used on servers with Node.js.
+      </p>
+    </section>
+
+    <!-- Syntax -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">2. JavaScript Syntax</h2>
+      <p>
+        JavaScript uses statements ending with <b>;</b> and is case-sensitive.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px; overflow-x:auto;">
+// This is a comment
+let message = "Hello World"; // Variable
+console.log(message); // Output to console
+      </pre>
+    </section>
+
+    <!-- Variables -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">3. Variables</h2>
+      <p>Variables store values. We use <b>let</b>, <b>const</b>, and <b>var</b>.</p>
+      <ul>
+        <li><b>let</b> → block-scoped, can change</li>
+        <li><b>const</b> → block-scoped, cannot change</li>
+        <li><b>var</b> → old way, function-scoped</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+let age = 20;
+const pi = 3.14;
+var name = "John";
+      </pre>
+    </section>
+
+    <!-- Data Types -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">4. Data Types</h2>
+      <ul>
+        <li>String → "Hello"</li>
+        <li>Number → 42</li>
+        <li>Boolean → true / false</li>
+        <li>Array → [1,2,3]</li>
+        <li>Object → {name: "John", age:25}</li>
+        <li>Null, Undefined</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+let student = {
+  name: "Ali",
+  age: 21,
+  skills: ["JS", "HTML", "CSS"]
+};
+console.log(student.name);
+      </pre>
+    </section>
+
+    <!-- Operators -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">5. Operators</h2>
+      <ul>
+        <li>Arithmetic: +, -, *, /, %</li>
+        <li>Comparison: ==, ===, !=, &lt;, &gt;</li>
+        <li>Logical: &&, ||, !</li>
+        <li>Assignment: =, +=, -=</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+let x = 10;
+let y = 5;
+console.log(x + y); // 15
+console.log(x > y); // true
+      </pre>
+    </section>
+
+    <!-- Conditions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">6. Conditional Statements</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+let age = 18;
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+      </pre>
+    </section>
+
+    <!-- Loops -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">7. Loops</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+for (let i=0; i<5; i++) {
+  console.log(i);
+}
+
+let fruits = ["apple","banana","mango"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+      </pre>
+    </section>
+
+    <!-- Functions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">8. Functions</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+function greet(name) {
+  return "Hello " + name;
+}
+console.log(greet("Ali"));
+
+// Arrow function
+const add = (a,b) => a + b;
+console.log(add(5,3));
+      </pre>
+    </section>
+
+    <!-- DOM -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">9. DOM Manipulation</h2>
+      <p>
+        JavaScript can change HTML content and styles dynamically using the DOM (Document Object Model).
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// HTML: &lt;p id="demo"&gt;Hello&lt;/p&gt;
+document.getElementById("demo").innerHTML = "Changed Text";
+document.getElementById("demo").style.color = "yellow";
+      </pre>
+    </section>
+
+    <!-- Events -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">10. Events</h2>
+      <p>JavaScript reacts to user actions like clicks, inputs, hovers.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// HTML: &lt;button onclick="sayHi()"&gt;Click Me&lt;/button&gt;
+function sayHi() {
+  alert("Hello!");
+}
+      </pre>
+    </section>
+
+    <!-- ES6 Features -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#f1c40f;">11. ES6+ Features</h2>
+      <ul>
+        <li><b>let & const</b></li>
+        <li><b>Arrow functions</b></li>
+        <li><b>Template literals</b> → `Hello ${name}`</li>
+        <li><b>Destructuring</b> → <code>let {a,b} = obj;</code></li>
+        <li><b>Promises & async/await</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+async function fetchData() {
+  let response = await fetch("https://api.example.com");
+  let data = await response.json();
+  console.log(data);
+}
+      </pre>
+    </section>
+
+    <!-- Back Link -->
+    <p><a href="../index.html" style="color:#f1c40f; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#f1c40f; text-decoration:none;">Home</a> | 
+      <a href="java.html" style="color:#f1c40f; text-decoration:none;">Next: Learn Java</a>
+    </p>
+  </footer>
+
+</body>
+</html>

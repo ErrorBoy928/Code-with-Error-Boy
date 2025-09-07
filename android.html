@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Android - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#2ecc71; color:#fff; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn Android Development</h1>
+    <p style="margin-top:8px;">Build Mobile Apps from Beginner to Advanced</p>
+  </header>
+
+  <!-- Main -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">1. What is Android?</h2>
+      <p>
+        Android is an open-source mobile operating system developed by Google.  
+        It powers millions of smartphones and devices worldwide.  
+        Apps are built using <b>Java</b>, <b>Kotlin</b>, and <b>XML</b>.
+      </p>
+    </section>
+
+    <!-- Setup -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">2. Setting up Android Studio</h2>
+      <ol>
+        <li>Download <a href="https://developer.android.com/studio" style="color:#2ecc71;">Android Studio</a></li>
+        <li>Install JDK (Java Development Kit)</li>
+        <li>Create your first project: <i>Hello World</i> app</li>
+      </ol>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// MainActivity.java
+package com.example.helloworld;
+
+import android.os.Bundle;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        TextView tv = new TextView(this);
+        tv.setText("Hello, World!");
+        setContentView(tv);
+    }
+}
+      </pre>
+    </section>
+
+    <!-- Architecture -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">3. Android Architecture</h2>
+      <ul>
+        <li><b>Linux Kernel</b> → Hardware drivers</li>
+        <li><b>Libraries</b> → SQLite, WebKit, OpenGL</li>
+        <li><b>Android Runtime</b> → ART (Android Runtime)</li>
+        <li><b>Application Framework</b> → Activity Manager, Content Providers</li>
+        <li><b>Applications</b> → User installed apps</li>
+      </ul>
+    </section>
+
+    <!-- Components -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">4. Android Components</h2>
+      <ul>
+        <li><b>Activities</b> → UI screens</li>
+        <li><b>Services</b> → Background tasks</li>
+        <li><b>Broadcast Receivers</b> → Respond to system-wide messages</li>
+        <li><b>Content Providers</b> → Manage app data</li>
+      </ul>
+    </section>
+
+    <!-- UI -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">5. Designing UI with XML</h2>
+      <p>Layouts are written in XML files stored inside <code>res/layout</code>.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+<!-- activity_main.xml -->
+&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"&gt;
+
+    &lt;TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Android!"
+        android:textSize="20sp"
+        android:textColor="#2ecc71"/&gt;
+
+    &lt;Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"/&gt;
+
+&lt;/LinearLayout&gt;
+      </pre>
+    </section>
+
+    <!-- Intents -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">6. Activities & Intents</h2>
+      <p>Use <b>Intents</b> to navigate between screens.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// MainActivity.java
+Intent i = new Intent(this, SecondActivity.class);
+startActivity(i);
+      </pre>
+    </section>
+
+    <!-- Storage -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">7. Data Storage in Android</h2>
+      <ul>
+        <li><b>SharedPreferences</b> → Store key-value pairs</li>
+        <li><b>SQLite Database</b> → Structured data</li>
+        <li><b>Room Database</b> → Modern ORM</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// Example: SharedPreferences
+SharedPreferences prefs = getSharedPreferences("MyApp", MODE_PRIVATE);
+SharedPreferences.Editor editor = prefs.edit();
+editor.putString("username", "errorboy");
+editor.apply();
+      </pre>
+    </section>
+
+    <!-- Networking -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">8. Networking</h2>
+      <p>Use libraries like <b>Volley</b>, <b>Retrofit</b>, or <b>OkHttp</b> for API calls.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// Example: Retrofit GET request
+public interface ApiService {
+    @GET("users")
+    Call&lt;List&lt;User&gt;&gt; getUsers();
+}
+      </pre>
+    </section>
+
+    <!-- Advanced -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#2ecc71;">9. Advanced Topics</h2>
+      <ul>
+        <li>RecyclerView & Adapters</li>
+        <li>Fragments & Navigation</li>
+        <li>Firebase Integration</li>
+        <li>Push Notifications</li>
+        <li>MVVM Architecture</li>
+      </ul>
+    </section>
+
+    <!-- Back -->
+    <p><a href="../index.html" style="color:#2ecc71; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#2ecc71; text-decoration:none;">Home</a> | 
+      <a href="c.html" style="color:#2ecc71; text-decoration:none;">Next: Learn C Language</a>
+    </p>
+  </footer>
+
+</body>
+</html>

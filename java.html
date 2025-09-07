@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Java - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#e74c3c; color:#fff; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn Java from Zero to Advanced</h1>
+    <p style="margin-top:8px;">Powerful, Object-Oriented Programming Language</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">1. What is Java?</h2>
+      <p>
+        Java is a <b>platform-independent</b>, <b>object-oriented</b> programming language used for desktop apps, mobile apps (Android), web applications, and enterprise systems.
+        It follows the principle <b>“Write Once, Run Anywhere (WORA)”</b>.
+      </p>
+    </section>
+
+    <!-- Basic Structure -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">2. Basic Program Structure</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px; overflow-x:auto;">
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+      </pre>
+      <p>
+        <b>Explanation:</b><br>
+        <ul>
+          <li><code>public class HelloWorld</code> → Class declaration</li>
+          <li><code>public static void main</code> → Main method, entry point of program</li>
+          <li><code>System.out.println()</code> → Prints output</li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Variables & Data Types -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">3. Variables and Data Types</h2>
+      <p>Java is <b>strongly typed</b>. Every variable must have a type.</p>
+      <ul>
+        <li><b>int</b> → numbers</li>
+        <li><b>double</b> → decimals</li>
+        <li><b>char</b> → single characters</li>
+        <li><b>boolean</b> → true/false</li>
+        <li><b>String</b> → text</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int age = 25;
+double price = 19.99;
+char grade = 'A';
+boolean isStudent = true;
+String name = "Ali";
+      </pre>
+    </section>
+
+    <!-- Operators -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">4. Operators</h2>
+      <ul>
+        <li>Arithmetic: +, -, *, /, %</li>
+        <li>Comparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+        <li>Logical: &&, ||, !</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int x = 10, y = 5;
+System.out.println(x + y); // 15
+System.out.println(x > y); // true
+System.out.println(x == y); // false
+      </pre>
+    </section>
+
+    <!-- Conditions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">5. Conditional Statements</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+int age = 18;
+if (age >= 18) {
+  System.out.println("Adult");
+} else {
+  System.out.println("Minor");
+}
+      </pre>
+    </section>
+
+    <!-- Loops -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">6. Loops</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+// For loop
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+// While loop
+int j = 0;
+while (j < 5) {
+  System.out.println(j);
+  j++;
+}
+      </pre>
+    </section>
+
+    <!-- Arrays -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">7. Arrays</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+String[] fruits = {"Apple", "Banana", "Mango"};
+for (String fruit : fruits) {
+  System.out.println(fruit);
+}
+      </pre>
+    </section>
+
+    <!-- Methods -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">8. Methods</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+public class Calculator {
+  static int add(int a, int b) {
+    return a + b;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(add(5,3));
+  }
+}
+      </pre>
+    </section>
+
+    <!-- OOP -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">9. Object-Oriented Programming (OOP)</h2>
+      <h3>Classes and Objects</h3>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+class Car {
+  String brand;
+  int year;
+
+  Car(String b, int y) {
+    brand = b;
+    year = y;
+  }
+
+  void display() {
+    System.out.println(brand + " " + year);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Car c1 = new Car("Toyota", 2022);
+    c1.display();
+  }
+}
+      </pre>
+
+      <h3>Inheritance</h3>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+class Animal {
+  void sound() {
+    System.out.println("Animal makes sound");
+  }
+}
+
+class Dog extends Animal {
+  void sound() {
+    System.out.println("Dog barks");
+  }
+}
+
+public class Test {
+  public static void main(String[] args) {
+    Dog d = new Dog();
+    d.sound();
+  }
+}
+      </pre>
+    </section>
+
+    <!-- Exceptions -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">10. Exception Handling</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+try {
+  int result = 10 / 0; // Error
+} catch (Exception e) {
+  System.out.println("Error: " + e.getMessage());
+} finally {
+  System.out.println("Always executes");
+}
+      </pre>
+    </section>
+
+    <!-- Collections -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">11. Collections Framework</h2>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+import java.util.ArrayList;
+
+public class ListExample {
+  public static void main(String[] args) {
+    ArrayList<String> list = new ArrayList<>();
+    list.add("Apple");
+    list.add("Mango");
+
+    for (String item : list) {
+      System.out.println(item);
+    }
+  }
+}
+      </pre>
+    </section>
+
+    <!-- Advanced Features -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e74c3c;">12. Advanced Features</h2>
+      <ul>
+        <li><b>Generics</b> → <code>ArrayList&lt;String&gt; list</code></li>
+        <li><b>Streams API</b></li>
+        <li><b>Lambda Expressions</b></li>
+        <li><b>Multithreading</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+list.stream()
+    .filter(item -> item.startsWith("A"))
+    .forEach(System.out::println);
+      </pre>
+    </section>
+
+    <!-- Back Link -->
+    <p><a href="../index.html" style="color:#e74c3c; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#e74c3c; text-decoration:none;">Home</a> | 
+      <a href="python.html" style="color:#e74c3c; text-decoration:none;">Next: Learn Python</a>
+    </p>
+  </footer>
+
+</body>
+</html>

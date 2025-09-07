@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn CSS - Code with_Error-Boy</title>
+  <link rel="icon" href="../icon.jpg">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#333;">
+
+  <!-- Header -->
+  <header style="background:#e60073; color:white; text-align:center; padding:20px;">
+    <h1 style="margin:0;">Learn CSS from Zero to Advanced</h1>
+    <p style="margin-top:8px;">Style your web pages with colors, layouts, and effects</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- Intro -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">1. What is CSS?</h2>
+      <p>
+        CSS (Cascading Style Sheets) is used to style HTML elements.
+        It controls <b>colors</b>, <b>fonts</b>, <b>layouts</b>, <b>spacing</b>, and more.
+        CSS makes websites beautiful and user-friendly.
+      </p>
+    </section>
+
+    <!-- Syntax -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">2. CSS Syntax</h2>
+      <p>
+        CSS works by selecting an element, then applying styles using <b>properties</b> and <b>values</b>.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px; overflow-x:auto;">
+selector {
+  property: value;
+}
+      </pre>
+      <p>Example:</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+p {
+  color: pink;
+  font-size: 16px;
+}
+      </pre>
+    </section>
+
+    <!-- Selectors -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">3. CSS Selectors</h2>
+      <ul>
+        <li><b>Element Selector</b> → targets all elements (e.g., <code>p</code>)</li>
+        <li><b>Class Selector</b> → <code>.classname</code></li>
+        <li><b>ID Selector</b> → <code>#idname</code></li>
+        <li><b>Universal Selector</b> → <code>*</code></li>
+        <li><b>Group Selector</b> → <code>h1, h2, p</code></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+/* Element selector */
+h1 { color: pink; }
+
+/* Class selector */
+.intro { font-size: 18px; }
+
+/* ID selector */
+#main-title { text-align: center; }
+      </pre>
+    </section>
+
+    <!-- Colors -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">4. Colors in CSS</h2>
+      <p>Colors can be defined by name, HEX, RGB, or HSL.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+h1 { color: pink; }        /* Named color */
+p { color: #e60073; }      /* HEX */
+div { color: rgb(255,0,100); }  /* RGB */
+span { color: hsl(330, 100%, 40%); } /* HSL */
+      </pre>
+    </section>
+
+    <!-- Box Model -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">5. The CSS Box Model</h2>
+      <p>Every element is a box with <b>content</b>, <b>padding</b>, <b>border</b>, and <b>margin</b>.</p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid pink;
+  margin: 15px;
+}
+      </pre>
+    </section>
+
+    <!-- Fonts -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">6. Fonts and Text</h2>
+      <ul>
+        <li><b>font-family</b> → Choose fonts</li>
+        <li><b>font-size</b> → Control size</li>
+        <li><b>font-weight</b> → bold, normal</li>
+        <li><b>text-align</b> → left, right, center</li>
+        <li><b>text-decoration</b> → underline, none</li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+      </pre>
+    </section>
+
+    <!-- Layout -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">7. Layout with CSS</h2>
+      <p>There are multiple ways to position and arrange elements.</p>
+      <ul>
+        <li><b>Display</b> → block, inline, inline-block, flex, grid</li>
+        <li><b>Position</b> → static, relative, absolute, fixed, sticky</li>
+        <li><b>Float</b> and <b>Clear</b></li>
+      </ul>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+/* Flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      </pre>
+    </section>
+
+    <!-- Responsive -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">8. Responsive Design</h2>
+      <p>
+        Media queries make websites work on all screen sizes.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+@media (max-width: 600px) {
+  body {
+    background: pink;
+  }
+}
+      </pre>
+    </section>
+
+    <!-- Animations -->
+    <section style="margin-bottom:30px;">
+      <h2 style="color:#e60073;">9. CSS Transitions and Animations</h2>
+      <p>
+        CSS can animate elements smoothly.
+      </p>
+      <pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:8px;">
+/* Transition */
+button {
+  background: pink;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #e60073;
+}
+
+/* Keyframe Animation */
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
+}
+div {
+  animation: slide 2s infinite alternate;
+}
+      </pre>
+    </section>
+
+    <!-- Back Link -->
+    <p><a href="../index.html" style="color:#e60073; text-decoration:none; font-weight:bold;">⬅ Back to Home</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:15px; background:#f1f1f1; border-top:1px solid #ddd;">
+    <p>&copy; 2025 Code with_Error-Boy | 
+      <a href="../index.html" style="color:#e60073; text-decoration:none;">Home</a> | 
+      <a href="javascript.html" style="color:#e60073; text-decoration:none;">Next: Learn JavaScript</a>
+    </p>
+  </footer>
+
+</body>
+</html>
